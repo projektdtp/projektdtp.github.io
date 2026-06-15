@@ -114,6 +114,7 @@ button {
 button:hover {
   opacity: 0.9;
 }
+
 .drive-button {
   display: block;
   width: 100%;
@@ -130,4 +131,44 @@ button:hover {
 
 .drive-button:hover {
   opacity: 0.9;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 35px;
+  padding: 24px;
+  background: rgba(20, 20, 24, 0.85);
+  border: 1px solid rgba(0, 212, 255, 0.25);
+  border-radius: 22px;
+  box-shadow: 0 0 25px rgba(0, 212, 255, 0.12);
+  color: #ccc;
+}
+
+.footer h3 {
+  margin-top: 0;
+  color: #00d4ff;
+  font-size: 22px;
+}
+
+.footer p {
+  margin: 8px 0;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.qr-code {
+  width: 100px;
+  max-width: 100px;
+  height: auto;
+  margin: 12px auto;
+  display: block;
+  border-radius: 10px;
+  background: white;
+  padding: 6px;
+}
+
+.footer-copy {
+  margin-top: 18px;
+  color: #777;
+  font-size: 12px;
 }
