@@ -1,1 +1,16 @@
-
+{
+  "name": "projekt.dtp",
+  "short_name": "projekt.dtp",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050505",
+  "theme_color": "#00d4ff",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "logo.PNG",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
