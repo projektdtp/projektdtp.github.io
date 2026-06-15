@@ -12,7 +12,6 @@
 
   <header class="hero">
     <img src="logo.PNG" alt="Logo projekt.dtp" class="logo">
-
     <h1>projekt.dtp</h1>
     <p>Drukujemy Twoje Pomysły</p>
   </header>
@@ -21,12 +20,16 @@
     <h2>Wycena druku 3D</h2>
 
     <p class="intro">
-      Potrzebujesz nietypowej części, elementu zamiennego,
-      akcesorium stolarskiego, akwarystycznego albo własnego projektu?
-      Wyślij zapytanie — przygotuję wycenę.
+      Opisz czego potrzebujesz, a zdjęcia lub pliki STL/STEP/3MF prześlij osobnym przyciskiem na Dysk Google.
     </p>
 
-    <form action="https://formspree.io/f/xdavboly" method="POST" enctype="multipart/form-data">
+    <a class="drive-button"
+       href="https://drive.google.com/drive/folders/1LvySHohdVavMkbHW-BbVqE8OYzzQLYTN?usp=drive_link"
+       target="_blank">
+      Prześlij zdjęcia / plik STL
+    </a>
+
+    <form action="https://formspree.io/f/xdavboly" method="POST">
 
       <label>Imię i nazwisko</label>
       <input type="text" name="imie_nazwisko" required>
@@ -64,11 +67,8 @@
       <label>Opis projektu</label>
       <textarea name="opis" placeholder="Opisz dokładnie czego potrzebujesz..." required></textarea>
 
-      <label>Dodaj zdjęcie elementu</label>
-      <input type="file" name="zdjecie" accept="image/*">
-
-      <label>Wyślij plik STL / STEP / 3MF</label>
-      <input type="file" name="plik_3d" accept=".stl,.step,.stp,.3mf,.obj">
+      <label>Informacja o plikach</label>
+      <input type="text" name="pliki" placeholder="Np. Wysłałem 2 zdjęcia i plik STL na Dysk Google">
 
       <input type="hidden" name="_subject" value="Nowe zapytanie ze strony projekt.dtp">
 
