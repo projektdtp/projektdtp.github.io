@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>projekt.dtp - Wycena druku 3D</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <header class="hero">
+    <img src="logo.png" alt="Logo projekt.dtp" class="logo">
+
+    <h1>projekt.dtp</h1>
+    <p>Drukujemy Twoje Pomysły</p>
+  </header>
+
+  <section class="card">
+    <h2>Wycena druku 3D</h2>
+
+    <p class="intro">
+      Potrzebujesz nietypowej części, elementu zamiennego,
+      akcesorium stolarskiego, akwarystycznego albo własnego projektu?
+      Wyślij zapytanie — przygotuję wycenę.
+    </p>
+
+    <form action="https://formspree.io/f/xdavboly" method="POST" enctype="multipart/form-data">
+
+      <label>Imię i nazwisko</label>
+      <input type="text" name="imie_nazwisko" required>
+
+      <label>Adres e-mail</label>
+      <input type="email" name="email" required>
+
+      <label>Telefon</label>
+      <input type="text" name="telefon">
+
+      <label>Rodzaj usługi</label>
+      <select name="usluga">
+        <option>Druk 3D</option>
+        <option>Projekt 3D</option>
+        <option>Naprawa / odtworzenie elementu</option>
+        <option>Akcesoria stolarskie</option>
+        <option>Akcesoria akwarystyczne</option>
+        <option>Element do samochodu</option>
+        <option>Inne</option>
+      </select>
+
+      <label>Materiał</label>
+      <select name="material">
+        <option>Nie wiem</option>
+        <option>PLA</option>
+        <option>PETG</option>
+        <option>ABS</option>
+        <option>ASA</option>
+        <option>TPU</option>
+      </select>
+
+      <label>Kolor</label>
+      <input type="text" name="kolor" placeholder="np. czarny, biały, czerwony">
+
+      <label>Opis projektu</label>
+      <textarea name="opis" placeholder="Opisz dokładnie czego potrzebujesz..." required></textarea>
+
+      <label>Dodaj zdjęcie elementu</label>
+      <input type="file" name="zdjecie" accept="image/*">
+
+      <label>Wyślij plik STL / STEP / 3MF</label>
+      <input type="file" name="plik_3d" accept=".stl,.step,.stp,.3mf,.obj">
+
+      <input type="hidden" name="_subject" value="Nowe zapytanie ze strony projekt.dtp">
+
+      <button type="submit">Wyślij zapytanie</button>
+
+    </form>
+  </section>
+
+</div>
+
+</body>
+</html>
